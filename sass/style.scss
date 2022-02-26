@@ -1,3 +1,5 @@
+@import "libs/reset.scss";
+
 /* On initialise nos variables scss */
 
 :root {
@@ -107,8 +109,10 @@ header {
 }
 
 .purple__effect {
-  shadow: var(--clr-violet);
+  box-shadow: var(--clr-violet);
 }
+
+
 .fonctionnement__pres {
   display: flex;
   flex-direction: row;
@@ -166,6 +170,10 @@ margin-right: auto;
 margin: 20px;
 }
 
+.decoration_link {
+  color: black;
+  text-decoration: none;
+}
 
 .Restaurants__bloc-titre {
 margin-right: auto;

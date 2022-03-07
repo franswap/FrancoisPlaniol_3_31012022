@@ -270,48 +270,61 @@ h2::after {
   animation-delay: 0.8s;
 }
 
+.menu__delai-8 {
+  animation-delay: 0.9s;
+}
+
+.card__footer {
+  display: flex;
+  position: relative;
+}
+
 .footer {
-    width: 100%;
-    background-color: var(--clr-footer);
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    height: 300px;
-    }
-          
-          .footer__div {
-    display: flex;
-    flex-direction: column;
-    padding: 0 40px;
-    width: 100%;
-    max-width: 1200px;
-    }
-          
-          .footer__div .logo {
-            font-family: var(--ff-logotitre);
-            color: white;
-            font-size: 20px;
-            padding: 15px 0;
-          }
-          
-          .footer__div-links {
-            flex-direction: column;
-            color: white;
-            height: 30px;
-            cursor: pointer;
-          }
-    
-          
-          .footer__div-links i {
-            margin-right: 7px;
-          }
-          
-          .footer__div-links-text {
-            display:flex;
-            flex-direction: row;
-            align-items: center;
-            font-size: 16px;
-            font-weight: 400;
-            text-decoration: none;
-          }
-    
+  width: 100%;
+  background-color: var(--clr-footer);
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  height: 300px;
+}
+
+.footer__div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer__div .logo {
+  margin-top: 20px;
+  margin-top: 15px;
+}
+
+.ohmyfood__logo {
+  font-family: var(--ff-logotitre);
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__div-links {
+  flex-direction: column;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+
+.footer__div-links i {
+  margin-right: 7px;
+}
+
+.footer__div-links-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}

@@ -89,10 +89,10 @@
 
 .loader__lettre {
   color: #484848;
-  animation: flash 1.2s linear infinite;
+  animation: lettres_animation 1.2s linear infinite;
 }
 
-@keyframes flash {
+@keyframes lettres_animation {
   0% {
       color: var(--clr-vertpale);
       text-shadow: 0 0 7px var(--clr-vertpale);
@@ -105,6 +105,10 @@
     color: var(--clr-vertpale);
     text-shadow: 0 0 7px var(--clr-vertpale);
   }
+}
+
+loader__animation::after ~ .loader {
+  display: none;
 }
 
 .loader__lettre:nth-child(1){
@@ -349,17 +353,19 @@ header {
 .bloc__coeur {
   position: relative;
   bottom: 50px;
-  left: 180px;
+  left: 230px;
 }
 
 .smiley__coeur--plein {
   display: none;
 }
 
-.smiley__coeur--plein:hover {
-  display: flex;
+.bloc__coeur:before {
+  opacity: 0;
+  transition: .5s;
+  content: "";
+  background: linear-gradient(0deg,#9356dc,#ff79da);
 }
-
 
 .card__footer {
   display: flex;
@@ -416,4 +422,3 @@ header {
   color: white;
 }
 
-/*# sourceMappingURL=style.css.map */

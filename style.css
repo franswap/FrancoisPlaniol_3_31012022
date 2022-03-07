@@ -362,15 +362,14 @@ header {
 
 .smiley__coeur--vide:hover {
     cursor: pointer;
-    opacity: 0%;
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    grid-area: 1/2;
     transition: opacity 0.3s ease-in-out;
     position: relative;
-}
+    background-color: linear-gradient(to right bottom, var(--clr-rose), var(--clr-violet));
+  }
 
 .smiley__coeur--plein{
     cursor: pointer;

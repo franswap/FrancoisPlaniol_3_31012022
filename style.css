@@ -25,16 +25,142 @@
     --bs: 8.25em 0.25em 0.75em rgba(0,0,0,.25), ;
   }
 }
+
+/* LOADER DU SITE  */
+
+.loader{
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-rose);
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  letter-spacing: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  overflow: hidden;
+}
+
+.logo__loader {
+  width: 80px;
+  height: 40px;
+}
+
+.loader___animation {
+  margin: 100px 50px 100px 0;
+  border: 10px solid #bdc3c7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: rond 2s linear infinite;
+}
+
+@keyframes rond {
+  0%{
+    transform: rotate(0deg) scale(1);
+    border-top-color: var(--clr-vertpale);
+    border-bottom-color: var(--clr-vertpale);
+    opacity: 1;
+  }
+  25%{
+    border-top-color: var(--clr-violet);
+    border-bottom-color: var(--clr-violet);
+  }
+  50% {
+     transform: rotate(360deg) scale(1.15);
+     border-top-color: var(--clr-vertpale);
+     border-bottom-color: var(--clr-vertpale);
+  }
+  75%{
+    border-top-color: var(--clr-violet);
+    border-bottom-color: var(--clr-violet);
+  }
+  100%{
+     transform: rotate(720deg) scale(1);
+     border-top-color: var(--clr-vertpale);
+     border-bottom-color: var(--clr-vertpale);
+     opacity: 0.1;
+  }
+}
+
+.loader__lettre {
+  color: #484848;
+  animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+      color: var(--clr-vertpale);
+      text-shadow: 0 0 7px var(--clr-vertpale);
+  }
+  90% {
+      color: var(--clr-violet);
+      text-shadow: none;
+  }
+  100% {
+    color: var(--clr-vertpale);
+    text-shadow: 0 0 7px var(--clr-vertpale);
+  }
+}
+
+.loader__lettre:nth-child(1){
+  animation-delay: 0.1s;
+}
+.loader__lettre:nth-child(2){
+  animation-delay: 0.2s;
+}
+.loader__lettre:nth-child(3){
+  animation-delay: 0.3s;
+}
+.loader__lettre:nth-child(4){
+  animation-delay: 0.4s;
+}
+.loader__lettre:nth-child(5){
+  animation-delay: 0.5s;
+}
+.loader__lettre:nth-child(6){
+  animation-delay: 0.6s;
+}
+.loader__lettre:nth-child(7){
+  animation-delay: 0.7s;
+}
+.loader__lettre:nth-child(8){
+  animation-delay: 0.8s;
+}
+.loader__lettre:nth-child(9){
+  animation-delay: 0.9s;
+}
+.loader__lettre:nth-child(10){
+  animation-delay: 1s;
+}
+
+
 /* Style general du site */
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   font-family: var(--ff-text);
+}
+
+main {
+  margin: auto;
+  max-width: 1440px;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1000;
 }
 
 .btn {
@@ -88,6 +214,7 @@ header {
 .fonctionnement {
   display: flex;
   flex-direction: column;
+  margin: 5px 25px 5px 25px;
 }
 
 .fonctionnement__1, .fonctionnement__2, .fonctionnement__3 {
@@ -98,10 +225,6 @@ header {
   width: 90%;
   box-shadow: 10px 10px 10px 10px #f2f2f2;
   border-radius: 10px;
-}
-
-.purple__effect {
-  box-shadow: var(--clr-violet);
 }
 
 .fonctionnement__pres {
@@ -148,7 +271,6 @@ header {
 }
 
 .Restaurants__bloc {
-  height: 1880px;
   width: 100%;
   border-radius: 10px;
   display: flex;
@@ -157,7 +279,6 @@ header {
   align-items: center;
   background-color: #f2f2f2;
   margin-right: auto;
-  margin: 20px;
 }
 
 .decoration_link {
@@ -176,26 +297,23 @@ header {
   align-items: center;
   flex-direction: column;
   background-color: white;
-  margin: 15px;
-  padding: 10px;
+  margin: 5px 25px 30px 25px;
   box-shadow: 10px 10px 10px 10px #F2F2F2;
   border-radius: 10px;
-  width: 100%;
-  height: 400px;
+  height: 360px;
+  position: relative;
 }
 
 .Restaurants__bloc-orgination {
   width: 100%;
 }
 
-.Restaurants__bloc-carré:hover {
-  cursor: pointer;
-  box-shadow: 0px 5px 15px var(--clr-rose);
-}
 
 .Restaurants__bloc-image {
   width: 100%;
+  max-width: 600px;
   height: 80%;
+  max-height: 250px;
   background-size: 100% 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
@@ -205,7 +323,47 @@ header {
 
 .Restaurants__bloc-description {
   margin-right: auto;
-  padding-bottom: 60px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Restaurants__bloc-description h2{
+  margin: 15px 0 5px 10px;
+}
+
+.Restaurants__bloc-description p{
+  margin: 0 0 5px 10px;
+}
+
+.carte__new {
+  background-color: #99e2d0;
+  color: #1b6150;
+  border-radius: 0.125rem;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 300px;
+  padding: 12px;
+}
+
+.bloc__coeur {
+  position: relative;
+  bottom: 50px;
+  left: 180px;
+}
+
+.smiley__coeur--plein {
+  display: none;
+}
+
+.smiley__coeur--plein:hover {
+  display: flex;
+}
+
+
+.card__footer {
+  display: flex;
+  position: relative;
 }
 
 .footer {
@@ -226,10 +384,15 @@ header {
 }
 
 .footer__div .logo {
+  margin-top: 20px;
+  margin-top: 15px;
+}
+
+.ohmyfood__logo {
   font-family: var(--ff-logotitre);
+  font-size: 30px;
+  text-decoration: none;
   color: white;
-  font-size: 20px;
-  padding: 15px 0;
 }
 
 .footer__div-links {
@@ -250,6 +413,7 @@ header {
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

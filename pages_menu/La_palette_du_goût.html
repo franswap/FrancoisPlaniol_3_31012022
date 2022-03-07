@@ -23,7 +23,7 @@
         <div class="intro">
           
         <div class="intro__retour">
-          <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+          <a href="../index.html" class="decoration__back"><i class="fas fa-arrow-left"></i></a>
         </div>
             <img class="intro__img" src="../images/logo/ohmyfood.png" alt="logo d'ohmyfood">
         </div>
@@ -34,9 +34,15 @@
     </div>
 
       <div class="menu">
-        <div class="menu__titre"> 
-          <h1> La palette du goût </h1>       
+        <div class="menu__head"> 
+          <h1> La palette du goût </h1> 
+          <div class="bloc__coeur">
+            <i class="smiley__coeur smiley__coeur--vide far fa-heart"></i>
+            <i class="smiley__coeur smiley__coeur--plein fas fa-heart"></i>
+          </div>      
         </div>
+
+
 
 
           <div class="menu__corps">
@@ -44,22 +50,22 @@
           </div>
         
         
-          <div class="menu__bloc">
+          <div class="menu__bloc menu__delai-0">
             <div class="part__gauche">
-          <div class="menu__sous-titre">
-            <h3>Fricassée d'escargot</h3>
+              <div class="menu__sous-titre">
+                <h3>Fricassée d'escargot</h3>
+              </div>
+              <div class="menu__description">
+                <p>Au piment d'espelette</p>
+              </div>
+            </div>
+              <div class="menu__prix">25€</div>
+                <div class="menu__choix">
+                  <i class="fas fa-check-circle"></i>
+                </div>
           </div>
-          <div class="menu__description">
-            <p>Au piment d'espelette</p>
-          </div>
-        </div>
-          <div class="menu__prix">25€</div>
-          <div class="menu_choix">
-            <i class="fas fa-check-circle"></i>
-          </div>
-        </div>
 
-        <div class="menu__bloc">
+        <div class="menu__bloc menu__delai-1">
           <div class="part__gauche">
           <div class="menu__sous-titre">
             <h3>Foie gras de canard mi-cuit</h3>
@@ -69,12 +75,12 @@
           </div>
         </div>
           <div class="menu__prix">35€</div>
-          <div class="menu_choix">
+          <div class="menu__choix">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
 
-        <div class="menu__bloc">
+        <div class="menu__bloc menu__delai-2">
           <div class="part__gauche">
           <div class="menu__sous-titre">
             <h3>Oeuf au plat</h3>
@@ -84,7 +90,7 @@
           </div>
         </div>
           <div class="menu__prix">20€</div>
-          <div class="menu_choix">
+          <div class="menu__choix">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
@@ -94,7 +100,7 @@
           <h2>PLATS</h2>
         </div>
 
-        <div class="menu__bloc">
+        <div class="menu__bloc menu__delai-3">
           <div class="part__gauche">
         <div class="menu__sous-titre">
           <h3>Filet de boeuf aux herbes</h3>
@@ -104,12 +110,12 @@
         </div>
       </div>
         <div class="menu__prix">40€</div>
-        <div class="menu_choix">
+        <div class="menu__choix">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
 
-      <div class="menu__bloc">
+      <div class="menu__bloc menu__delai-4">
         <div class="part__gauche">
         <div class="menu__sous-titre">
           <h3>Parmentier de queue de boeuf</h3>
@@ -119,12 +125,12 @@
         </div>
       </div>
         <div class="menu__prix">35€</div>
-        <div class="menu_choix">
+        <div class="menu__choix">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
 
-      <div class="menu__bloc">
+      <div class="menu__bloc menu__delai-5">
         <div class="part__gauche">
         <div class="menu__sous-titre">
           <h3>Filet de turbot</h3>
@@ -134,7 +140,7 @@
         </div>
       </div>
         <div class="menu__prix">44€</div>
-        <div class="menu_choix">
+        <div class="menu__choix">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
@@ -144,7 +150,7 @@
         <h2>DESSERTS</h2>
       </div>
 
-      <div class="menu__bloc">
+      <div class="menu__bloc menu__delai-6">
         <div class="part__gauche">
       <div class="menu__sous-titre">
         <h3>Paris-Brest</h3>
@@ -154,12 +160,12 @@
       </div>
     </div>
       <div class="menu__prix">18€</div>
-      <div class="menu_choix">
+      <div class="menu__choix">
         <i class="fas fa-check-circle"></i>
       </div>
     </div>
 
-    <div class="menu__bloc">
+    <div class="menu__bloc menu__delai-7">
       <div class="part__gauche">
       <div class="menu__sous-titre">
         <h3>Macaron au chocolat d'exception </h3>
@@ -169,12 +175,12 @@
       </div>
     </div>
       <div class="menu__prix">22€</div>
-      <div class="menu_choix">
+      <div class="menu__choix">
         <i class="fas fa-check-circle"></i>
       </div>
     </div>
 
-    <div class="menu__bloc">
+    <div class="menu__bloc menu__delai-8">
       <div class="part__gauche">
       <div class="menu__sous-titre">
         <h3>Mousse au chocolat </h3>
@@ -184,34 +190,37 @@
       </div>
     </div>
       <div class="menu__prix">23€</div>
-      <div class="menu_choix">
+      <div class="menu__choix">
         <i class="fas fa-check-circle"></i>
       </div>
     </div>
+  </div>
 
-<button class="btn">Commander</button>
-</div>
+  <div class="commander">
+    <button class="btn">Commander</button>
+  </div>
 
-<footer class="footer">
-        <div class="footer__div">
-            <div class="logo"><a href="index.html">ohmyfood</a></div>
-            <div class="footer__div-links">
-              <div class="footer__div-links-text">
-                <i class="fas fa-utensils"></i>
-                <h3 class="footer__div-text">Proposer un restaurant</h3>
-              </div>
-              <div class="footer__div-links-text">
-                <i class="fas fa-hands-helping"></i>
-                <h3 class="footer__text">Devenir partenaire</h3>
-              </div>
-              <div class="footer__div-links-text">
-                <h3 class="footer__text">Mentions légales</h3>
-              </div>
-              <div class="footer__div-links-text">
-                <h3 class="footer__div-links-text"><a href="mailto:contact@ohmyfood.com">Contact</a></h3>
-              </div>
+    <!-- Le footer de notre site de restauration -->
+    <footer class="footer">
+      <div class="footer__div">
+          <div class="logo"><a href="index.html" class="ohmyfood__logo">ohmyfood</a></div>
+          <div class="footer__div-links">
+            <div class="footer__div-links-text">
+              <i class="fas fa-utensils"></i>
+              <h3 class="footer__div-text">Proposer un restaurant</h3>
+            </div>
+            <div class="footer__div-links-text">
+              <i class="fas fa-hands-helping"></i>
+              <h3 class="footer__text">Devenir partenaire</h3>
+            </div>
+            <div class="footer__div-links-text">
+              <h3 class="footer__text">Mentions légales</h3>
+            </div>
+            <div class="footer__div-links-text">
+              <h3><a href="mailto:contact@ohmyfood.com" class="footer__div-links-text">Contact</a></h3>
             </div>
           </div>
-    </footer>
+        </div>
+  </footer>
 </body>
 </html>

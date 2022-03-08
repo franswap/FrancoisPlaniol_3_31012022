@@ -162,12 +162,6 @@ h2::after {
         opacity: 1;
       }
     }
-
-  .menu__bloc:hover {
-    cursor: pointer;
-    transition: 1000ms;
-    transform: scale(1.02);
-  }
   
   .menu__bloc:hover ~ .menu__prix {
     position: absolute;
@@ -207,7 +201,7 @@ h2::after {
     opacity: 0.8;
     cursor: pointer;
     transition: .3s;
-    box-shadow: var(--bs);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
 

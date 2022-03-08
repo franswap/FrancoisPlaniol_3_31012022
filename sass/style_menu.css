@@ -35,7 +35,6 @@
 html, body {
     scroll-behavior: smooth;
     font-family: var(--ff-text);
-    max-width: 762px;
 }
 
 header {
@@ -189,6 +188,7 @@ h2::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 25px;
   }
 
   .btn {
@@ -355,4 +355,10 @@ h2::after {
   font-weight: 400;
   text-decoration: none;
   color: white;
+}
+
+@media screen and (min-width: 1480px) {
+  .img__menu {
+    height: 700px;
+  }
 }

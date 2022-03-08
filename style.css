@@ -153,7 +153,6 @@ body {
 
 main {
   padding: 8px;
-  max-width: 1440px;
 }
 
 header {
@@ -180,6 +179,7 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: bold;
   margin: 4px 2px;
   border-radius: 200px;
   background: linear-gradient(to right bottom, var(--clr-rose), var(--clr-violet));
@@ -233,7 +233,7 @@ header {
   width: 90%;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .fonctionnement__pres {
@@ -245,7 +245,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 33px 20px 20px -30px;
+  margin: 20px 20px 20px -30px;
   border-radius: 25px;
   width: 42px;
   height: 42px;
@@ -356,8 +356,8 @@ header {
   color: #1b6150;
   border-radius: 0.125rem;
   position: absolute;
-  margin-top: 20px;
-  margin-left: 75%;
+  margin-top: 25px;
+  margin-left: 58%;
   padding: 12px;
 }
 
@@ -392,7 +392,6 @@ header {
 
 .smiley__coeur--plein{
     cursor: pointer;
-    grid-area: 1/2;
     transition: color 0.2s ease-in-out;
 }
 
@@ -455,20 +454,29 @@ header {
 }
 
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 883px) {
   .Restaurants__bloc-orgination {
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .tablette_menu {
-    flex-direction: row;
+    flex-direction: column;
+    margin-right: 45px;
+  }
+  .Restaurants__bloc-titre {
+    font-size: 30px;
+  }
+  .footer, .footer__div {
+    align-items: center;
   }
 }
 
 @media screen and (min-width: 1480px) {
-  .Restaurants__bloc-orgination {
-    flex-direction: row;
-  }
   .fonctionnement {
     flex-direction: row;
+  }
+  .fonctionnement__1, .fonctionnement__2, .fonctionnement__3 {
+    width: 400px;
   }
 }

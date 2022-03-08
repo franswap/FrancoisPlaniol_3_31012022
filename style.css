@@ -33,20 +33,18 @@
   align-items: center;
   justify-content: center;
   font-style: italic;
-  overflow: hidden;
+  overflow: auto;
   z-index: 100;
+  overscroll-behavior: none;
   animation: go_out 5000ms;
 }
 
 @keyframes go_out {
   from {
     opacity: 1;
-    visibility: visible;
   }
   to {
     opacity: 0.5;
-    visibility: hidden;
-    animation-fill-mode: forwards;
   }
 }
 
@@ -336,6 +334,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 25px;
 }
 
 
@@ -548,7 +547,11 @@ header {
     justify-content: center;
     align-items: center;
     color: var(--clr-violet);
+    font-size: 30px;
+    font-style: var(--ff-logotitre);
   }
+
+
   .fonctionnement__1, .fonctionnement__2, .fonctionnement__3 {
     width: 400px;
   }

@@ -170,6 +170,12 @@ h2::after {
     transform: scale(1.02);
   }
   
+  .menu__bloc:hover ~ .menu__prix {
+    position: absolute;
+    top: 0;
+    right: -700px;
+  }
+
   .menu__description {
     margin: 0;
   }

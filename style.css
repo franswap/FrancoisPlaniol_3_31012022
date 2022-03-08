@@ -273,6 +273,18 @@ header {
   margin: 20px;
 }
 
+.purple__effect {
+  background-color: #f5edff;
+}
+
+.fonctionnement__1:hover, .fonctionnement__2:hover, .fonctionnement__3:hover {
+  cursor: pointer;
+  transition: 1000ms;
+  transform: scale(1.02);
+  background-color: #f5edff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 13px 23px;
+}
+
 .Restaurant {
   display: flex;
   justify-content: space-around;
@@ -311,8 +323,12 @@ header {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   height: 360px;
-  width: 87%;
+  width: 100%;
   position: relative;
+}
+
+.Restaurants__bloc-carré:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 13px 23px;
 }
 
 .Restaurants__bloc-orgination {
@@ -325,8 +341,8 @@ header {
 
 .Restaurants__bloc-image {
   width: 100%;
-  max-width: 310px;
-  min-width: 300px;
+  max-width: 500px;
+  min-width: 340px;
   height: 80%;
   max-height: 250px;
   background-size: 100% 100%;
@@ -368,7 +384,7 @@ header {
 .bloc__coeur {
   position: relative;
   bottom: 50px;
-  left: 140px;
+  left: 130px;
 }
 
 /* STYLE DU COEUR ET ANIMATION  */
@@ -381,20 +397,52 @@ header {
     display: inline-block;
 }
 
+.smiley__coeur--vide {
+  position:absolute;
+
+}
+
 .smiley__coeur--vide:hover {
     cursor: pointer;
-    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: opacity 0.3s ease-in-out;
     position: relative;
+    background-clip: text;
     background-color: linear-gradient(to right bottom, var(--clr-rose), var(--clr-violet));
+    animation: remplissage 0.4s ease-in-out;
   }
+
+@keyframes remplissage {
+  from {
+    background-color: white;
+  }
+  to {
+    background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+  }
+}
 
 .smiley__coeur--plein{
     cursor: pointer;
-    transition: color 0.2s ease-in-out;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    background-clip: text;
+    background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+}
+
+.smiley__coeur--plein:hover{
+  cursor: pointer;
+  animation: opacite 0.2s ease-in-out;
+  z-index: 100;
+}
+
+@keyframes opacite {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .card__footer {
@@ -491,7 +539,33 @@ header {
   .fonctionnement {
     flex-direction: row;
   }
+  .Restaurants__bloc {
+    flex-direction: row;
+  }
+  .Restaurants__bloc-titre {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-violet);
+  }
   .fonctionnement__1, .fonctionnement__2, .fonctionnement__3 {
     width: 400px;
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .tablette_menu {
+    flex-direction: row;
+  }
+  .Restaurants__bloc-orgination {
+    margin-top: 30px;
+  }
+  .Restaurants__bloc-carré {
+    width: 600px;
+  }
+  .Restaurants__bloc-image {
+    min-width: 600px;
+    max-width: 600px;
   }
 }

@@ -421,6 +421,7 @@ header {
   opacity: 1;
   transform: scale(1.15);
   transition: all 1000ms;
+  background-color: linear-gradient(to right, #FF79DA, #9356DC);
 }
 
 
@@ -527,8 +528,8 @@ header {
     justify-content: center;
     align-items: center;
     color: var(--clr-violet);
-    font-size: 30px;
-    font-style: var(--ff-logotitre);
+    font-size: 60px;
+    font-family: var(--ff-logotitre);
   }
 
 

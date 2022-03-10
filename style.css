@@ -384,7 +384,7 @@ header {
 
 .bloc__coeur {
   position: relative;
-  bottom: 50px;
+  bottom: 70px;
   left: 130px;
 }
 
@@ -402,51 +402,27 @@ header {
 }
 
 .smiley__coeur--vide:hover {
-    cursor: pointer;
-    position: relative;
+    color: transparent;
+    opacity: 1;
     background-clip: text;
-    animation: remplissage 0.4s ease-in-out;
   }
-
-@keyframes remplissage {
-  from {
-    background-color: white;
-  }
-  to {
-    background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
-  }
-}
+  
 
 .smiley__coeur--plein{
-    cursor: pointer;
-    position: relative;
-    transition: 0.2s ease-in-out;
-    background-clip: text;
-    background-color: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+  position:absolute;
+  color: transparent;
+  opacity: 0;
 }
 
 .smiley__coeur--plein:hover{
-  cursor: pointer;
-  animation: opacite 0.2s ease-in-out;
-  z-index: 100;
+  background-image: linear-gradient(to right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transform: scale(1.15);
+  transition: all 1000ms;
 }
 
-@keyframes opacite {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.card__footer {
-  display: flex;
-  position: relative;
-}
 
 
 /* FOOTER DU SITE  */
@@ -458,6 +434,11 @@ header {
   flex-flow: column;
   justify-content: flex-start;
   height: 300px;
+}
+
+.card__footer {
+  display: flex;
+  position: relative;
 }
 
 .footer__div {

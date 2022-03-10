@@ -120,21 +120,52 @@ h2::after {
   margin: 15px;
   font-family: var(--ff-logotitre);
   display: flex;
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 
+
+
+/* STYLE DU COEUR ET ANIMATION  */
+
+
 .bloc__coeur {
-  margin-left: auto;
+  margin-right: 10%;
+  margin-bottom: 4%;
 }
 
 .fa-heart {
   font-weight: normal;
   font-style: normal;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: none;
-  display: inline-block;
+}
+
+.smiley__coeur--vide {
+position:absolute;
+}
+
+.smiley__coeur--vide:hover {
+  color: transparent;
+  opacity: 1;
+  background-clip: text;
+}
+
+
+.smiley__coeur--plein{
+position:absolute;
+color: transparent;
+opacity: 0;
+}
+
+.smiley__coeur--plein:hover{
+background-image: linear-gradient(to right, #FF79DA, #9356DC);
+background-clip: text;
+-webkit-background-clip: text;
+opacity: 1;
+transform: scale(1.15);
+transition: all 1000ms;
 }
 
   .menu__bloc {

@@ -393,21 +393,18 @@ header {
 .fa-heart {
     font-weight: normal;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
     text-transform: none;
-    display: inline-block;
 }
 
 .smiley__coeur--vide {
   position:absolute;
-
 }
 
 .smiley__coeur--vide:hover {
     cursor: pointer;
     position: relative;
     background-clip: text;
-    background-color: linear-gradient(to right bottom, var(--clr-rose), var(--clr-violet));
     animation: remplissage 0.4s ease-in-out;
   }
 
@@ -425,7 +422,7 @@ header {
     position: relative;
     transition: 0.2s ease-in-out;
     background-clip: text;
-    background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+    background-color: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
 }
 
 .smiley__coeur--plein:hover{

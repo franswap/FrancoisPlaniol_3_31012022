@@ -496,15 +496,24 @@ header {
     max-height: 350px;
 }
 }
-@media screen and (min-width: 812px) {
-  .fonctionnement__pres-description, .fonctionnement__pres-icone {
-    font-size: 25px;
+
+@media screen and (min-width: 786px) {
+  .fonctionnement__1, .fonctionnement__2,.fonctionnement__3 {
+    width: 50%;
   }
+  .fonctionnement__2 {
+    margin-left: 25%;
+  }
+  .fonctionnement__3 {
+    margin-left: 50%;
+}
+}
+@media screen and (min-width: 812px) {
   .fonctionnement__pres-numerotation {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 35px 25px 20px -25px;
+    margin: 25px 55px 22px -75px;
     border-radius: 28px;
     width: 45px;
     height: 45px;
@@ -532,6 +541,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-right: 15px;
   }
   .tablette_menu {
     flex-direction: column;
@@ -561,10 +571,11 @@ header {
   .fonct__desktop {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
   .fonctionnement__1, .fonctionnement__2,.fonctionnement__3 {
     margin: 5px;
-    width: 250px;
+    width: 40%;
     height: 70px;
     align-items: center;
     justify-content: center;
@@ -588,18 +599,32 @@ header {
     align-items: center;
     justify-content: center;
     margin: 18px 25px 20px -25px;
-    border-radius: 15px;
-    width: 60px;
+    border-radius: 25px;
+    width: 40px;
     height: 38px;
+}
+.Restaurants__bloc-carré {
+  width: 420px;
+  height: 350px;
+}
+.Restaurants__bloc-image {
+  width: 100%;
+  max-width: 420px;
+  min-width: 400px;
+  height: 75%;
+  max-height: 350px;
 }
 }
 
 @media screen and (min-width: 1222px) {
 
   .Restaurants__bloc-titre, .fonctionnement h2 {
-    color: var(--clr-violet);
+    color: var(--clr-vertpale);
     font-size: 60px;
     font-family: var(--ff-logotitre);
+    text-shadow: -1px -1px 0px var(--clr-rose),
+    3px 3px 0px var(--clr-rose),
+    6px 6px 0px var(--clr-rose);
   }
   .Restaurants__bloc-carré {
     width: 500px;
@@ -612,9 +637,8 @@ header {
     height: 75%;
     max-height: 350px;
 }
+
 }
-
-
 
 @media screen and (min-width: 1480px) {
   .fonctionnement {
@@ -623,14 +647,9 @@ header {
     align-items: center;
   }
   .fonctionnement__1, .fonctionnement__2,.fonctionnement__3 {
-    width: 250px;
+    width: 40%;
   }
 
-  .Restaurants__bloc-titre {
-    color: var(--clr-violet);
-    font-size: 60px;
-    font-family: var(--ff-logotitre);
-  }
   .Restaurants__bloc-carré {
     width: 650px;
     height: 450px;
@@ -647,27 +666,22 @@ header {
     margin-left: 25px;
   }
 
-  .fonctionnement__1, .fonctionnement__2, .fonctionnement__3 {
-    width: 400px;
-  }
   .fonct__desktop {
     display: flex;
     flex-direction: row;
   }
   .fonctionnement__pres-numerotation {
-    margin:-30px -30px -30px 15px;
-    border-radius: 40px;
+    margin:-45px 50px -30px 15px;
+    border-radius: 110px;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
 }
 .fonctionnement__pres-description {
   font-size: 21px;
 }
 .fonctionnement__pres-icone {
   font-size: 21px;
-}
-.fonctionnement h2 {
-  color: var(--clr-violet);
-  font-size: 60px;
-  font-family: var(--ff-logotitre);
 }
 }
 @media screen and (min-width: 1980px) {

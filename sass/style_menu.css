@@ -403,8 +403,21 @@ transition: all 1000ms;
 }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1200px) {
   .img__menu {
     height: 700px;
   }
+  .menu__bloc {
+    width: 80%;
+  }
+  .menu__corps {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+  .menu__desktop {
+    display: flex;
+    flex-direction: row;
+  }
+
 }

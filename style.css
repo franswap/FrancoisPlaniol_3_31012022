@@ -482,6 +482,50 @@ header {
   color: white;
 }
 
+@media screen and (min-width: 578px) {
+
+  .Restaurants__bloc-carré {
+    width: 450px;
+    height: 350px;
+  }
+  .Restaurants__bloc-image {
+    width: 100%;
+    max-width: 450px;
+    min-width: 350px;
+    height: 75%;
+    max-height: 350px;
+}
+}
+@media screen and (min-width: 812px) {
+  .fonctionnement__pres-description, .fonctionnement__pres-icone {
+    font-size: 25px;
+  }
+  .fonctionnement__pres-numerotation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 25px 20px -25px;
+    border-radius: 28px;
+    width: 45px;
+    height: 45px;
+}
+.fonctionnement__pres {
+  display: flex;
+  justify-content: center;
+}
+.Restaurants__bloc-titre {
+  text-align: center;
+  margin-right: 0;
+  font-size: 30px;
+}
+.fonctionnement h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.fonctionnement {
+ margin-bottom: 25px; 
+}
+}
 
 @media screen and (min-width: 883px) {
   .Restaurants__bloc-orgination {
@@ -493,9 +537,7 @@ header {
     flex-direction: column;
     margin-right: 45px;
   }
-  .Restaurants__bloc-titre {
-    font-size: 30px;
-  }
+
   .footer, .footer__div {
     flex-direction: row;
     width: 100%;
@@ -513,31 +555,121 @@ header {
     margin-top: 2%;
     justify-content: center;
   }
+  .fonctionnement {
+    align-items: center;
+  }
+  .fonct__desktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .fonctionnement__1, .fonctionnement__2,.fonctionnement__3 {
+    margin: 5px;
+    width: 250px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+  .fonctionnement__2,.fonctionnement__3 {
+    margin-left: 25px;
+  }
+  .fonctionnement__pres {
+    font-size: 20px;
+  }
+  .fonctionnement__pres-description {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .fonctionnement__pres-icone {
+    font-size: 25px;
+    margin-top: 0;
+  }
+  .fonctionnement__pres-numerotation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px 25px 20px -25px;
+    border-radius: 15px;
+    width: 60px;
+    height: 38px;
+}
 }
 
-@media screen and (min-width: 1480px) {
-  .fonctionnement {
-    flex-direction: row;
-  }
-  .Restaurants__bloc {
-    flex-direction: row;
-  }
-  .Restaurants__bloc-titre {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 1222px) {
+
+  .Restaurants__bloc-titre, .fonctionnement h2 {
     color: var(--clr-violet);
     font-size: 60px;
     font-family: var(--ff-logotitre);
   }
+  .Restaurants__bloc-carré {
+    width: 500px;
+    height: 350px;
+  }
+  .Restaurants__bloc-image {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 75%;
+    max-height: 350px;
+}
+}
 
+
+
+@media screen and (min-width: 1480px) {
+  .fonctionnement {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fonctionnement__1, .fonctionnement__2,.fonctionnement__3 {
+    width: 250px;
+  }
+
+  .Restaurants__bloc-titre {
+    color: var(--clr-violet);
+    font-size: 60px;
+    font-family: var(--ff-logotitre);
+  }
+  .Restaurants__bloc-carré {
+    width: 650px;
+    height: 450px;
+  }
+  .Restaurants__bloc-image {
+    width: 100%;
+    max-width: 650px;
+    min-width: 600px;
+    height: 75%;
+    max-height: 350px;
+}
+
+  .Restaurants__bloc-orgination {
+    margin-left: 25px;
+  }
 
   .fonctionnement__1, .fonctionnement__2, .fonctionnement__3 {
     width: 400px;
   }
+  .fonct__desktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .fonctionnement__pres-numerotation {
+    margin:-30px -30px -30px 15px;
+    border-radius: 40px;
 }
-
+.fonctionnement__pres-description {
+  font-size: 21px;
+}
+.fonctionnement__pres-icone {
+  font-size: 21px;
+}
+.fonctionnement h2 {
+  color: var(--clr-violet);
+  font-size: 60px;
+  font-family: var(--ff-logotitre);
+}
+}
 @media screen and (min-width: 1980px) {
   .tablette_menu {
     flex-direction: row;
@@ -546,10 +678,13 @@ header {
     margin-top: 30px;
   }
   .Restaurants__bloc-carré {
-    width: 600px;
+    width: 850px;
   }
   .Restaurants__bloc-image {
-    min-width: 600px;
-    max-width: 600px;
-  }
+    width: 100%;
+    max-width: 850px;
+    min-width: 800px;
+    height: 75%;
+    max-height: 400px;
+}
 }

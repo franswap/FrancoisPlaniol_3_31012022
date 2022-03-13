@@ -368,6 +368,10 @@ header {
   margin: 0 0 5px 10px;
 }
 
+.tablette_menu {
+  margin-left: 50px;
+}
+
 /* STYLE CARTE NOUVEAU */
 
 .carte__new {
@@ -394,7 +398,10 @@ header {
     font-weight: normal;
     font-style: normal;
     font-size: 40px;
-    text-transform: none;
+}
+
+.fa-heart:before {
+  content: "";
 }
 
 .smiley__coeur--vide {
@@ -403,12 +410,12 @@ header {
 
 .smiley__coeur--vide:hover {
     color: transparent;
-    opacity: 1;
+    opacity: 0;
     background-clip: text;
   }
   
 
-.smiley__coeur--plein{
+.smiley__coeur--plein {
   position:absolute;
   color: transparent;
   opacity: 0;
@@ -417,10 +424,11 @@ header {
 .smiley__coeur--plein:hover{
   background-image: linear-gradient(to right, #FF79DA, #9356DC);
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: linear-gradient(to right, #FF79DA, #9356DC);
   opacity: 1;
-  transform: scale(1.15);
   transition: all 1000ms;
+  transform: scale(1.15);
   background-color: linear-gradient(to right, #FF79DA, #9356DC);
 }
 

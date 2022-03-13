@@ -46,7 +46,6 @@ header {
     margin: 20px
 }
 
-
 .intro__retour {
   font-size: 30px;
   display: flex;
@@ -176,6 +175,7 @@ transition: all 1000ms;
   width: 92%;
   height: 60px;
   animation: menu_chargement 300ms;
+  overflow: clip;
   }
   
   @keyframes menu_chargement {

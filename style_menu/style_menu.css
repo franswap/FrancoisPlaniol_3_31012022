@@ -175,7 +175,6 @@ transform: scale(1.15);
   width: 92%;
   height: 60px;
   animation: menu_chargement 300ms;
-  overflow: clip;
   }
   
   @keyframes menu_chargement {
@@ -195,13 +194,34 @@ transform: scale(1.15);
     right: -700px;
   }
 
+  .part__gauche {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .part__gauche p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .part__gauche h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .menu__description {
     margin: 0;
   }
 
   .menu__prix {
-    margin-top: 55px;
+    margin-top: 35px;
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .part__droite {
@@ -234,8 +254,6 @@ transform: scale(1.15);
     transition: .3s;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-
-
 
 .menu__bloc .menu__choix {
     display: none;
@@ -332,6 +350,10 @@ transform: scale(1.15);
   position: relative;
 }
 
+.menu__bloc:hover .menu__prix {
+  margin-top: 45px;
+}
+
 /* FOOTER DU SITE  */
 
 .footer {
@@ -341,6 +363,10 @@ transform: scale(1.15);
   flex-flow: column;
   justify-content: flex-start;
   height: 300px;
+}
+
+.footer h3 {
+  font-weight: lighter;
 }
 
 .footer__div {
@@ -421,6 +447,13 @@ transform: scale(1.15);
   }
   .intro__retour {
     width: 45%;
+  }
+
+  .btn {
+    width: 450px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 600;
   }
 
 }

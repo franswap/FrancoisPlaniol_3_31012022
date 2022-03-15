@@ -443,6 +443,10 @@ header {
   height: 300px;
 }
 
+.footer h3 {
+  font-weight: lighter;
+}
+
 .card__footer {
   display: flex;
   position: relative;

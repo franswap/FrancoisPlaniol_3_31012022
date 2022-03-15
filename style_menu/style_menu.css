@@ -18,16 +18,6 @@
     --fs-body: 1rem;
 }
 
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body:1.125rem;
-
-        --bs: 8.25em 0.25em 0.75em rgba(0,0,0,.25),  
-    }
-}
 
 /* Style general du site */
 
@@ -146,9 +136,8 @@ position: absolute;
 
 .smiley__coeur--plein {
 position:absolute;
-background-image: linear-gradient(to right, #FF79DA, #9356DC);
--webkit-text-fill-color: linear-gradient(to right, #FF79DA, #9356DC);
-background-color: linear-gradient(to right, #FF79DA, #9356DC);
+background-image: linear-gradient(to right, var(--clr-rose), var(--clr-violet));
+-webkit-text-fill-color: linear-gradient(to right, var(--clr-rose), var(--clr-violet));
 background-clip: text;
 -webkit-background-clip: text; 
 color: transparent;
@@ -297,7 +286,7 @@ transform: scale(1.15);
             transform: scaleX(0);
   }
   100% {
-            transform: scaleX(-50px);
+            transform: scaleX(1);
   }
 }
 

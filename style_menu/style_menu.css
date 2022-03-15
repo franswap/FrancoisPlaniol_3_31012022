@@ -113,9 +113,11 @@ h2::after {
 
 .bloc__coeur {
     position: relative;
-    right: 7%;
+    right: 10%;
+    top: -15px;
     display: inline-block;
 }
+
 .taille__coeur {
   font-weight: normal;
   font-style: normal;
@@ -444,5 +446,12 @@ transform: scale(1.15);
     font-size: 30px;
     font-weight: 600;
   }
+
+}
+@media screen and (min-width: 1800px) {
+
+.bloc__coeur {
+  right: 5%;
+}
 
 }

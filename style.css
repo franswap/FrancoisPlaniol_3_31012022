@@ -366,10 +366,6 @@ header {
   margin: 0 0 5px 10px;
 }
 
-.tablette_menu {
-  margin-left: 50px;
-}
-
 /* STYLE CARTE NOUVEAU */
 
 .carte__new {
@@ -488,6 +484,27 @@ header {
   color: white;
 }
 
+@media screen and (max-width: 430px) {
+
+  .Restaurants__bloc-carré {
+    width: 300px;
+    height: 280px;
+  }
+  .Restaurants__bloc-image {
+    width: 100%;
+    max-width: 300px;
+    min-width: 280px;
+    height: 75%;
+    max-height: 280px;
+}
+.Restaurants__bloc-carré {
+  margin-bottom: 45px
+}
+.intro p {
+  font-size: 13px;
+}
+}
+
 @media screen and (min-width: 578px) {
 
   .Restaurants__bloc-carré {
@@ -542,7 +559,25 @@ header {
 }
 }
 
-@media screen and (min-width: 883px) {
+@media screen and (min-width: 870px) {
+
+  .Restaurants__bloc-carré {
+    width: 600px;
+    height: 350px;
+  }
+  .Restaurants__bloc-image {
+    width: 100%;
+    max-width: 600px;
+    min-width: 550px;
+    height: 75%;
+    max-height: 350px;
+}
+.Restaurants__bloc-carré {
+  margin-bottom: 45px
+}
+}
+
+@media screen and (min-width: 1075px) {
   .Restaurants__bloc-orgination {
     flex-direction: row;
     align-items: center;
@@ -617,6 +652,10 @@ header {
   height: 75%;
   max-height: 350px;
 }
+.tablette_menu {
+  margin-left: 50px;
+}
+
 }
 
 @media screen and (min-width: 1222px) {

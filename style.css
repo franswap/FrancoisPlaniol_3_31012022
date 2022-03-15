@@ -377,7 +377,6 @@ header {
 .carte__new {
   background-color: #99e2d0;
   color: #1b6150;
-  border-radius: 0.125rem;
   position: absolute;
   margin-top: 25px;
   margin-left: 58%;
@@ -605,11 +604,8 @@ header {
     margin-top: 0;
   }
   .fonctionnement__pres-numerotation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 18px 25px 20px -25px;
-    border-radius: 25px;
+    border-radius: 75px;
     width: 40px;
     height: 38px;
 }
@@ -647,9 +643,13 @@ header {
     height: 75%;
     max-height: 350px;
 }
-
+.fonctionnement__pres-numerotation {
+  margin: 10px 75px 20px -25px;
+  border-radius: 25px;
+  width: 40px;
+  height: 38px;
 }
-
+}
 @media screen and (min-width: 1480px) {
   .fonctionnement {
     flex-direction: column;
@@ -693,6 +693,30 @@ header {
 .fonctionnement__pres-icone {
   font-size: 21px;
 }
+.carte__new {
+  width: 120px;
+  font-size: 30px;
+  text-align: center;
+}
+.intro {
+  height: 350px;
+}
+.intro p {
+  font-size: 30px;
+}
+
+.intro h3 {
+  font-size: 40px;
+}
+
+
+.btn {
+  width: 450px;
+  height: 80px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
 }
 @media screen and (min-width: 1980px) {
   .tablette_menu {

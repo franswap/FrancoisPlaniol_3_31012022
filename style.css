@@ -33,7 +33,7 @@
   overflow: hidden;
   z-index: 100;
   overscroll-behavior: none;
-  animation: go_out 5000ms forwards;
+  animation: go_out 2500ms forwards;
 }
 
 @keyframes go_out {

@@ -520,31 +520,22 @@ header {
 }
 }
 
-@media screen and (min-width: 786px) {
-  .fonctionnement__1, .fonctionnement__2,.fonctionnement__3 {
-    width: 50%;
+@media screen and (min-width: 650px) {
+
+  .Restaurants__bloc-carré {
+    width: 450px;
+    height: 350px;
   }
-  .fonctionnement__2 {
-    margin-left: 25%;
-  }
-  .fonctionnement__3 {
-    margin-left: 50%;
+  .Restaurants__bloc-image {
+    width: 100%;
+    max-width: 450px;
+    min-width: 350px;
+    height: 75%;
+    max-height: 350px;
 }
 }
+
 @media screen and (min-width: 812px) {
-  .fonctionnement__pres-numerotation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 55px 22px -75px;
-    border-radius: 28px;
-    width: 45px;
-    height: 45px;
-}
-.fonctionnement__pres {
-  display: flex;
-  justify-content: center;
-}
 .Restaurants__bloc-titre {
   text-align: center;
   margin-right: 0;

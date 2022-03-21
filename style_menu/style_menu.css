@@ -92,6 +92,7 @@ h2::after {
   
 .menu__corps {
   margin-left: 15px;
+  overflow: hidden;
 }
 
   .menu__sous-titre {
@@ -159,6 +160,7 @@ transform: scale(1.15);
   justify-content: space-between;
   flex-direction: row;
   background-color: white;
+  overflow: hidden;
   margin: 15px;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -166,6 +168,8 @@ transform: scale(1.15);
   width: 92%;
   height: 60px;
   animation: menu_chargement 300ms;
+  animation-fill-mode: both;
+  transform: scale(0);
   }
   
   @keyframes menu_chargement {
@@ -178,6 +182,7 @@ transform: scale(1.15);
         opacity: 1;
       }
     }
+
   
   .menu__bloc:hover ~ .menu__prix {
     position: absolute;
@@ -249,7 +254,7 @@ transform: scale(1.15);
 .menu__bloc .menu__choix {
     display: none;
     background: var(--clr-vertpale);
-    border-radius: 15px;
+    border-radius: 0px 15px 15px 0;
     padding: 0 20px;
     height: 80px;
     width: 40px;

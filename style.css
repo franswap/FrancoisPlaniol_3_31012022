@@ -652,12 +652,9 @@ header {
 @media screen and (min-width: 1222px) {
 
   .Restaurants__bloc-titre, .fonctionnement h2 {
-    color: var(--clr-vertpale);
+    font-weight: 700;
     font-size: 60px;
     font-family: var(--ff-logotitre);
-    text-shadow: -1px -1px 0px var(--clr-rose),
-    3px 3px 0px var(--clr-rose),
-    6px 6px 0px var(--clr-rose);
   }
   .Restaurants__bloc-carré {
     width: 500px;
@@ -707,13 +704,7 @@ header {
     display: flex;
     flex-direction: row;
   }
-  .fonctionnement__pres-numerotation {
-    margin:-45px 50px -30px 15px;
-    border-radius: 110px;
-    width: 80px;
-    height: 80px;
-    font-size: 40px;
-}
+
 .fonctionnement__pres-description {
   font-size: 21px;
 }
@@ -745,6 +736,17 @@ header {
 }
 
 }
+
+@media screen and (min-width: 1800px) {
+
+.fonctionnement__pres-numerotation {
+  margin-left: -33px;
+  font-size: 25px;
+  width: 50px;
+  height: 48px;
+}
+}
+
 @media screen and (min-width: 1980px) {
   .tablette_menu {
     flex-direction: row;
@@ -763,3 +765,11 @@ header {
     max-height: 400px;
 }
 }
+
+@media screen and (min-width: 2000px) {
+
+  .fonctionnement__pres-numerotation {
+    margin-left: -40px;
+  }
+  }
+  

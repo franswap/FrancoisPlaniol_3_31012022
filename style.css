@@ -449,6 +449,7 @@ header {
   flex-direction: column;
   padding: 0 40px;
   width: 100%;
+  z-index: 80;
 }
 
 .footer__div .logo__footer {
